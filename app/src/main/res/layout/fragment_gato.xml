@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".fragmentos.AnuncioFragment">
+
+    <!-- NestedScrollView para el contenido principal -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/NvoTxtTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="15dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Presume Tus Gatos"
+                android:textColor="@color/marron"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/frgMenRecGaturros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- ImageButton flotante -->
+    <ImageButton
+        android:id="@+id/frgMenImgBtnNuevoGato"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/agregarfotogato"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="36dp"
+        android:background="@drawable/imagenfondo"
+        />
+
+</FrameLayout>

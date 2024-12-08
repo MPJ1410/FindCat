@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/marron" /> <!-- Cambia el color según tu diseño -->
+    <corners android:radius="60dp" /> <!-- Ajusta el radio para hacerlo completamente circular -->
+    <size
+        android:width="50dp"
+        android:height="50dp" /> <!-- Define el tamaño del botón -->
+
+</shape>
